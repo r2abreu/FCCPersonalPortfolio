@@ -17,19 +17,8 @@ body {
   padding: 0;
   margin: 0 auto;
   background-color: #fff;
-  max-width: 50rem;
-}
-
-main section {
-  border: 0.0625rem solid black;
-}
-
-article {
-  border: 0.0625rem solid black;
-}
-
-footer {
-  border: 0.0625rem solid black;
+  max-width: 100%;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 /* -------------------------------------------------------------------------- */
@@ -43,6 +32,7 @@ footer {
   z-index: 1;
   top: 0;
   left: 0;
+  height: 10vh;
   /* nav menu */
 }
 
@@ -70,9 +60,9 @@ footer {
 .l-first-section {
   /* function to convert px to rem */
   margin-top: 3.75rem;
-  height: 100vh;
+  height: 90vh;
   text-align: center;
-  padding-top: 30vh;
+  padding-top: 20vh;
 }
 
 .l-section-divider {
@@ -91,9 +81,6 @@ footer {
 }
 
 .l-second-section .l-article-grid {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -101,7 +88,7 @@ footer {
   padding: 3.4375rem 0.3125rem;
 }
 
-.l-second-section .l-article-grid .l-card {
+.l-second-section .l-article-grid .l-anchor-grid {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -109,28 +96,152 @@ footer {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  background-color: red;
-  border: 1px solid black;
   margin-bottom: 1.875rem;
 }
 
-.l-second-section .l-article-grid .l-card .l-card-img {
+.l-second-section .l-article-grid .l-anchor-grid .l-card-img {
   /* super important property for responsive imgs to fit its container */
   max-width: 100%;
 }
 
-.l-second-section .l-article-grid .l-card .l-card-caption {
+.l-second-section .l-article-grid .l-anchor-grid .l-card-caption {
+  max-width: 100%;
   text-align: center;
   padding: 1.25rem;
   margin: 0;
 }
 
 /* THIRD SECTION (CTA AND SOCIAL) */
-.l-third-section {
-  padding: 1.25rem;
+.l-third-section .l-cta {
+  padding: 3.125rem;
+  text-align: center;
+}
+
+.l-third-section .l-social .l-social-grid {
+  padding: 0rem 2.5rem 2.5rem 2.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0;
+}
+
+.l-second-section-divider {
+  margin: auto;
+  padding: 0;
+  border: 2px solid #f54291;
+}
+
+.l-footer {
+  text-align: center;
+  padding: 1.25rem 2.5rem 0.625rem 2.5rem;
 }
 
 /* -------------------------------------------------------------------------- */
-/*                        M O D U L E    C A T E G O RY                       */
+/*                       M O D U L E S  C A T E G O R Y                       */
 /* -------------------------------------------------------------------------- */
+/* nav container */
+.nav-container {
+  background-color: #f54291;
+  border-bottom: 2px solid #5f5f5f;
+}
+
+.nav-container .nav-link {
+  text-decoration: none;
+  color: #fff5ee;
+  font-size: 1.25rem;
+}
+
+.first-section {
+  background-color: #0a97b0;
+}
+
+.first-section h1 {
+  font-size: 3.125rem;
+  padding: 0px 2.5rem;
+}
+
+.first-section h2 {
+  color: #fff5ee;
+  font-weight: lighter;
+}
+
+.section-divider {
+  margin: auto;
+  margin-top: 0px;
+  width: 80%;
+}
+
+.second-section {
+  background-color: #4bc2b2;
+}
+
+.second-section a {
+  text-decoration: none;
+}
+
+.second-section h2 {
+  color: #fff5ee;
+}
+
+.second-section .card {
+  border-radius: 2px;
+  -webkit-box-shadow: 0px 0px 3px 0px black;
+          box-shadow: 0px 0px 3px 0px black;
+}
+
+.second-section .card .card-caption {
+  background-color: #fff5ee;
+  color: #fff5ee;
+  background: #303841;
+}
+
+.third-section {
+  background-color: #0a97b0;
+}
+
+.third-section .cta h1 {
+  font-size: 2.5rem;
+  text-align: start;
+  padding: 0rem 0rem 0rem 1.875rem;
+  color: #fff5ee;
+}
+
+.third-section .cta h4 {
+  font-weight: lighter;
+  color: #fff5ee;
+}
+
+.third-section .social ul {
+  list-style-type: none;
+}
+
+.third-section .social ul li a {
+  color: #fff5ee;
+  text-decoration: none;
+  font-size: 1.4375rem;
+  padding: 1.25rem;
+}
+
+.third-section .social ul li a i {
+  font-size: 1.25rem;
+  padding: 0.625rem 0.3125rem;
+}
+
+.footer {
+  background-color: #0a97b0;
+}
+
+.footer h4 {
+  color: white;
+  font-weight: lighter;
+}
 /*# sourceMappingURL=app.css.map */

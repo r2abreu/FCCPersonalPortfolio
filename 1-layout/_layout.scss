@@ -13,6 +13,7 @@
 	z-index: 1;
 	top: 0;
 	left: 0;
+	height: 10vh;
 	/* nav menu */
 	.l-nav-menu {
 		display: flex;
@@ -32,9 +33,9 @@
 .l-first-section {
 	/* function to convert px to rem */
 	margin-top: toRem(60px);
-	height: 100vh;
+	height: 90vh;
 	text-align: center;
-	padding-top: 30vh;
+	padding-top: 20vh;
 }
 
 .l-section-divider {
@@ -52,15 +53,12 @@
 	}
 	/* grid of articles of the 2nd section */
 	.l-article-grid {
-		display: flex;
 		flex-direction: column;
 		padding: toRem(55px) toRem(5px);
 
-		.l-card {
+		.l-anchor-grid {
 			display: flex;
 			flex-direction: column;
-			background-color: red;
-			border: 1px solid black;
 			margin-bottom: toRem(30px);
 
 			.l-card-img {
@@ -69,6 +67,7 @@
 			}
 
 			.l-card-caption {
+				max-width: 100%;
 				text-align: center;
 				padding: toRem(20px);
 				margin: 0;
@@ -80,5 +79,30 @@
 /* THIRD SECTION (CTA AND SOCIAL) */
 
 .l-third-section {
-	padding: toRem(20px);
+	.l-cta {
+		padding: toRem(50px);
+		text-align: center;
+	}
+
+	.l-social {
+		.l-social-grid {
+			padding: toRem(0px) toRem(40px) toRem(40px) toRem(40px);
+			display: flex;
+			flex-direction: row;
+			flex-wrap: wrap;
+			justify-content: center;
+			margin: 0;
+		}
+	}
+}
+
+.l-second-section-divider {
+	margin: auto;
+	padding: 0;
+	border: 2px solid $secondary-color;
+}
+
+.l-footer {
+	text-align: center;
+	padding: toRem(20px) toRem(40px) toRem(10px) toRem(40px);
 }
