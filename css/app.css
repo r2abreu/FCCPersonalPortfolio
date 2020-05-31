@@ -20,11 +20,11 @@ body {
   max-width: 50rem;
 }
 
-main {
+main section {
   border: 0.0625rem solid black;
 }
 
-main section {
+article {
   border: 0.0625rem solid black;
 }
 
@@ -66,9 +66,68 @@ footer {
   padding: 1.25rem;
 }
 
+/* FIRST SECTION (HERO BANNER)*/
 .l-first-section {
   /* function to convert px to rem */
-  margin-top: 4.375rem;
+  margin-top: 3.75rem;
+  height: 100vh;
+  text-align: center;
+  padding-top: 30vh;
+}
+
+.l-section-divider {
+  margin: 0;
+  padding: 0;
+}
+
+/* SECOND SECTION (PROJECT GRID) */
+.l-second-section {
+  padding-top: 1.875rem;
+  /* grid of articles of the 2nd section */
+}
+
+.l-second-section .l-second-section-title {
+  text-align: center;
+}
+
+.l-second-section .l-article-grid {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 3.4375rem 0.3125rem;
+}
+
+.l-second-section .l-article-grid .l-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: red;
+  border: 1px solid black;
+  margin-bottom: 1.875rem;
+}
+
+.l-second-section .l-article-grid .l-card .l-card-img {
+  /* super important property for responsive imgs to fit its container */
+  max-width: 100%;
+}
+
+.l-second-section .l-article-grid .l-card .l-card-caption {
+  text-align: center;
+  padding: 1.25rem;
+  margin: 0;
+}
+
+/* THIRD SECTION (CTA AND SOCIAL) */
+.l-third-section {
+  padding: 1.25rem;
 }
 
 /* -------------------------------------------------------------------------- */

@@ -5,6 +5,7 @@
 /* import utilities file */
 
 @import '../4-utilities/utilities';
+
 .l-nav-container {
 	position: fixed;
 	width: 100%;
@@ -26,7 +27,58 @@
 	}
 }
 
+/* FIRST SECTION (HERO BANNER)*/
+
 .l-first-section {
 	/* function to convert px to rem */
-	margin-top: toRem(70px);
+	margin-top: toRem(60px);
+	height: 100vh;
+	text-align: center;
+	padding-top: 30vh;
+}
+
+.l-section-divider {
+	margin: 0;
+	padding: 0;
+}
+
+/* SECOND SECTION (PROJECT GRID) */
+
+.l-second-section {
+	padding-top: toRem(30px);
+
+	.l-second-section-title {
+		text-align: center;
+	}
+	/* grid of articles of the 2nd section */
+	.l-article-grid {
+		display: flex;
+		flex-direction: column;
+		padding: toRem(55px) toRem(5px);
+
+		.l-card {
+			display: flex;
+			flex-direction: column;
+			background-color: red;
+			border: 1px solid black;
+			margin-bottom: toRem(30px);
+
+			.l-card-img {
+				/* super important property for responsive imgs to fit its container */
+				max-width: 100%;
+			}
+
+			.l-card-caption {
+				text-align: center;
+				padding: toRem(20px);
+				margin: 0;
+			}
+		}
+	}
+}
+
+/* THIRD SECTION (CTA AND SOCIAL) */
+
+.l-third-section {
+	padding: toRem(20px);
 }

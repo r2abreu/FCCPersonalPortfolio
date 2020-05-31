@@ -21,11 +21,13 @@ body {
 }
 
 main {
-	border: toRem(1px) solid black;
-
 	section {
 		border: toRem(1px) solid black;
 	}
+}
+
+article {
+	border: toRem(1px) solid black;
 }
 
 footer {
