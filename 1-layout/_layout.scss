@@ -36,9 +36,9 @@
 .l-first-section {
 	/* function to convert px to rem */
 	margin-top: toRem(60px);
-	height: 90vh;
+	height: 100vh;
 	text-align: center;
-	padding-top: 20vh;
+	padding-top: 30vh;
 }
 
 .l-section-divider {
@@ -65,7 +65,8 @@
 		.l-article-grid {
 			flex-flow: row wrap;
 			justify-content: space-around;
-			max-width: toRem(1800px);
+			max-width: toRem(1600px);
+			margin: auto;
 		}
 	}
 

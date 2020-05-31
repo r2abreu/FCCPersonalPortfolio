@@ -68,9 +68,9 @@ body {
 .l-first-section {
   /* function to convert px to rem */
   margin-top: 3.75rem;
-  height: 90vh;
+  height: 100vh;
   text-align: center;
-  padding-top: 20vh;
+  padding-top: 30vh;
 }
 
 .l-section-divider {
@@ -109,7 +109,8 @@ body {
             flex-flow: row wrap;
     -ms-flex-pack: distribute;
         justify-content: space-around;
-    max-width: 112.5rem;
+    max-width: 100rem;
+    margin: auto;
   }
 }
 
